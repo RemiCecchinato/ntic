@@ -40,6 +40,12 @@ Ces deux sources m'ont permis d'agrandir considérablement le champs de ma veill
 
 ![Feedbro](feedbro.png)
 
+Procesus de veille
+------------------
+
+Une à deux fois par semaine, j'ai lu les articles levés par les alertes Google Alerts et Feedbro.
+À partir de ces lectures j'ai sois écarté sois gardé les articles que j'ai lu, et pour ceux que j'ai lu j'ai également ajouté certaines de ses sources à la liste des articles à lire.
+
 Difficultés rencontrées
 -----------------------
 
@@ -47,4 +53,8 @@ La principale difficulté que j'ai rencontré est qu'il n'existait pas de flux R
 Les flux RSS auquels je me suis abonné n'étaient donc que des flux ayant pour thématique les réseaux de neurones et j'ai du filtrer à la main les articles spécifiques aux GNNs.
 Ce filtrage manuel a été un frein à la réalisation de cette veille technologique.
 
+Conclusion
+----------
 
+Cette méthodologie de veille m'a permis de remplir mon objectif d'établissement d'un état de l'art.
+Malgré cela j'ai épprouvé des difficultés pour filtrer les flux RSS, ce qui m'a empécher d'élargir ma veille à Twitter.
