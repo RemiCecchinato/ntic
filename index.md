@@ -45,11 +45,28 @@ En effet en modélisant chaque mot comme un noeud d'une graphe et les relations 
 
 ![Exemple d'une phrase modélisée sous forme de graphe](text.png)
 
-## Théorie
+## Fonctionement d'un réseau de neurones sur les graphes
+
+Les réseaux de neurones sur les graphes fonctionent sur un modèle de convolution.
+À chaque noeud du graphe est associé un descripteur qui correspond aux entrées du GNN.
+En chaque noeud, un réseau de neurones classique prends en entrée la moyenne des descripteurs des noeuds voisins. La sortie de ce réseau de neurones classique est le nouveau descripteur de ce noeud.
+Cela définit une opération de convolution.
+Cette opération a l'avantage d'être très simple à mettre en oeuvre.
 
 ![Modèle de fonctionement d'un réseau de neurones sur les graphes](gnn.png)
 
+Les réseaux de neurones sur les graphes sont généralement des réseaux de neurones peu profonds.
+En effet l'objectif de tels réseaux est d'exploiter la structure du graphe (parfois plus que les descripteurs eux-mêmes).
+Les GNNs profonds souffrent généralement de performances faibles, cela vient de l'opération de moyennage sur les descripteurs en entrée de chaque noeud qui détruit l'information après plusieurs couches [7].
+
 ## Outils et librairies
+
+Il existe trois grande librairies de réseaux de neurones sur les graphes.
+* [Pytorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/) basé sur pytorch,
+* [Graph Nets](https://github.com/deepmind/graph_nets) basé sur tensorflow et développé par DeepMind,
+* [Deep Graph Librairy (DGL)](https://www.dgl.ai/) destinée aux débutants.
+
+Ces trois librairies offrent les mêmes fonctionalités.
 
 ## Bibliographie
 
@@ -66,4 +83,6 @@ En effet en modélisant chaque mot comme un noeud d'une graphe et les relations 
 [5] Jin, Wengong, Kevin Yang, Regina Barzilay, et Tommi Jaakkola. « LEARNING MULTIMODAL GRAPH-TO-GRAPH TRANSLATION FOR MOLECULAR OPTIMIZATION », 2019, 13.
 
 [6] Yao, Liang, Chengsheng Mao, et Yuan Luo. « Graph Convolutional Networks for Text Classification ». ArXiv:1809.05679 [Cs], 13 novembre 2018. http://arxiv.org/abs/1809.05679.
+
+[7] Oono, Kenta, et Taiji Suzuki. « GRAPH NEURAL NETWORKS EXPONENTIALLY LOSE EXPRESSIVE POWER FOR NODE CLASSIFICATION », 2020, 37.
 
